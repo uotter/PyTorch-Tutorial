@@ -46,7 +46,7 @@ class CNN(nn.Module):
 cnn = CNN()
 
 # !!!!!!!! Change in here !!!!!!!!! #
-cnn.cuda()      # Moves all model parameters and buffers to the GPU.
+cnn.cuda()      # Moves all models parameters and buffers to the GPU.
 
 optimizer = torch.optim.Adam(cnn.parameters(), lr=LR)
 loss_func = nn.CrossEntropyLoss()
